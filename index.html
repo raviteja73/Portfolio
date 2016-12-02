@@ -1,0 +1,450 @@
+<!doctype html>
+<html ng-app="portfolio">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Portfolio</title>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body ng-controller="portController">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+			
+			<!-- Menu -->
+			<div class="col-md-1 menu">
+				<div class="row">
+					<div class="profile">
+						<div class="menuDiv"><a href="#" ng-click="show=1"><img class="img img-circle img-responsive menuIcons" src="img/menu/profile_icon.png"></a></div>
+						<div class="menuDiv"><a href="#" ng-click="show=2"><img class="img img-circle img-responsive menuIcons" src="img/menu/skills.png"></a></div>
+						<div class="menuDiv"><a href="#" ng-click="show=3"><img class="img img-circle img-responsive menuIcons" src="img/menu/experience.png"></a></div>
+						<div class="menuDiv"><a href="#" ng-click="show=4"><img class="img img-circle img-responsive menuIcons" src="img/menu/projects.png"></a></div>
+						<div class="menuDiv"><a href="#" ng-click="show=5"><img class="img img-circle img-responsive menuIcons" src="img/menu/contact.png"></a></div>
+					</div>
+					<!-- download button -->
+					<div>
+					<div class="downloadDiv"><a href="#"><img class="img img-circle img-responsive menuIcons" src="img/menu/download.png"></a></div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Pages -->
+			<div class="col-md-7 pages">
+				<!--  ---------------- About Me Page ------------------- --->
+			<div class="row" ng-show="show==1">
+				<!-- Page Title -->
+				<div class="am_title">
+					<p>Profile - About Me</p>
+				</div>
+				<!-- Page Content --> 
+				<div class="col-md-6">
+				<div class="lists">
+					<ul>
+					<li>
+					<i class="glyphicon glyphicon-user"></i>
+					<label>Name</label>
+					<span class="value">Ravi Teja</span>
+					</li>
+					<li>
+					<i class="glyphicon glyphicon-calendar"></i>
+					<label>Date of Birth</label>
+					<span class="value">April 21,1992</span>
+					</li>
+					<li>
+					<i class="glyphicon glyphicon-map-marker"></i>
+					<label>Address</label>
+					<span class="value">Charlotte, North Carolina</span>
+					</li>
+					<li>
+					<i class="glyphicon glyphicon-envelope"></i>
+					<label>Email</label>
+					<span class="value">ravichs473@gmail.com</span>
+					</li>
+					<li>
+					<i class="glyphicon glyphicon-phone"></i>
+					<label>Mobile</label>
+					<span class="value">+17047337471</span>
+					</li>
+					</ul>
+					</div>
+					<!-- Description about me -->
+					<div class="aboutMeDesc">
+					<p>
+					I'm from India and currently reside in USA.
+					 Exploring different cultures and life styles is one of the reasons that pushed me here.
+					 I love to volunteer in social activities and for any good cause. I worked as student volunteer in UNCC to help international students.
+					 </p>
+					 <p>
+					 I'm more interested and inclined towards the mobile field.
+					 I love building mobile applications in Android & Hybrid platforms. 
+					 At present i'm learning to design and develop games in android platform.
+					</p>
+					</div>
+					<div class="emptyDiv">
+
+					</div>
+					</div>
+				<!-- Empty Div -->
+				<div class="col-md-1">
+				</div>
+				<!-- Images -->
+				<div class="col-md-5 am_img">
+				<img class="img img-responsive" src="img/aboutme/am_img1.png" alt="img1" id="am_img1">
+				<img class="img img-responsive" src="img/aboutme/am_img2.png" alt="img1" id="am_img2">
+					<div class="emptyDiv">
+
+					</div>
+				</div>
+
+			</div>
+
+				<!-- -----------------Technical Skills Page ----------------------- -->
+				<!-- Page Title -->
+			<div class="row" ng-show="show==2">
+				<div class="am_title">
+					<p>Skills - Technical</p>
+				</div>
+				<div class="col-md-6">
+				<!-- Page Content -->
+
+					<!-- Client Side Programming Skills -->
+					<div class="title-content">
+						<p>Client Side Programming</p>
+					</div>
+					<div class="skills">
+						<div class="skill-title">
+							<span>HTML</span>
+						</div>
+						<div class="skill-bar" style="width:80%; background: -webkit-linear-gradient(left, #5e76a8 80%, white 20%);-webkit-animation: progress80 1s 1 forwards;"><span>80%</span></div>
+					</div>
+					<div class="skills">
+						<div class="skill-title">
+							<span>CSS</span>
+						</div>
+						<div class="skill-bar" style="width:80%; background: -webkit-linear-gradient(left, #5e76a8 80%, white 20%);-webkit-animation: progress80 1s 1 forwards;"><span>80%</span></div>
+					</div>
+					<div class="skills">
+						<div class="skill-title" style="width:30%">
+							<span>BOOTSTRAP</span>
+						</div>
+						<div class="skill-bar" style="width:70%; background: -webkit-linear-gradient(left, #5e76a8 75%, white 25%);-webkit-animation: progress70 1s 1 forwards;"><span>75%</span></div>
+					</div>
+					<div class="skills">
+						<div class="skill-title" style="width:30%">
+							<span>JAVASCRIPT</span>
+						</div>
+						<div class="skill-bar" style="width:70%; background: -webkit-linear-gradient(left, #5e76a8 60%, white 40%);-webkit-animation: progress70 1s 1 forwards;"><span>60%</span></div>
+					</div>
+
+					<!-- Server Side Programming Skills -->
+					<div class="title-content">
+						<p>Server Side Programming</p>
+					</div>
+					<div class="skills">
+						<div class="skill-title">
+							<span>PHP</span>
+						</div>
+						<div class="skill-bar" style="width:80%; background: -webkit-linear-gradient(left, #5e76a8 70%, white 30%);-webkit-animation: progress80 1s 1 forwards;"><span>70%</span></div>
+					</div>
+					<div class="skills">
+						<div class="skill-title" style="width:25%;">
+							<span>NodeJS</span>
+						</div>
+						<div class="skill-bar" style="width:75%; background: -webkit-linear-gradient(left, #5e76a8 60%, white 40%);-webkit-animation: progress75 1s 1 forwards;"><span>60%</span></div>
+					</div>
+					<div class="skills">
+						<div class="skill-title">
+							<span>JSP</span>
+						</div>
+						<div class="skill-bar" style="width:80%; background: -webkit-linear-gradient(left, #5e76a8 80%, white 20%);-webkit-animation: progress80 1s 1 forwards;"><span>80%</span></div>
+					</div>
+					<div class="skills">
+						<div class="skill-title" style="width:25%;">
+							<span>PYTHON</span>
+						</div>
+						<div class="skill-bar" style="width:75%; background: -webkit-linear-gradient(left, #5e76a8 60%, white 40%);-webkit-animation: progress75 1s 1 forwards;"><span>60%</span></div>
+					</div>
+
+					<!-- JavaScript Libraries -->
+					<div class="title-content">
+						<p>JavaScript Libraries</p>
+					</div>
+					<div class="skills">
+						<div class="skill-title" style="width:25%">
+							<span>JQUERY</span>
+						</div>
+						<div class="skill-bar" style="width:75%; background: -webkit-linear-gradient(left, #5e76a8 70%, white 30%);-webkit-animation: progress75 1s 1 forwards;"><span>70%</span></div>
+					</div>
+					<div class="skills">
+						<div class="skill-title" style="width:30%">
+							<span>ANGULARJS</span>
+						</div>
+						<div class="skill-bar" style="width:70%; background: -webkit-linear-gradient(left, #5e76a8 60%, white 40%);-webkit-animation: progress70 1s 1 forwards;"><span>60%</span></div>
+					</div>
+
+				</div>
+
+				<!-- Second Column -->
+				<div class="col-md-6">
+					<!-- Page Content -->
+
+					<!-- Mobile Development Platforms -->
+					<div class="title-content">
+						<p>Mobile Development Platforms</p>
+					</div>
+					<div class="skills">
+						<div class="skill-title" style="width:25%">
+							<span>ANDROID</span>
+						</div>
+						<div class="skill-bar" style="width:75%; background: -webkit-linear-gradient(left, #5e76a8 75%, white 25%);-webkit-animation: progress75 1s 1 forwards;"><span>75%</span></div>
+					</div>
+					<div class="skills">
+						<div class="skill-title" style="width:30%">
+							<span>CORDOVA</span>
+						</div>
+						<div class="skill-bar" style="width:70%; background: -webkit-linear-gradient(left, #5e76a8 80%, white 20%);-webkit-animation: progress70 1s 1 forwards;"><span>80%</span></div>
+					</div>
+
+					<!-- Cloud Platform -->
+					<div class="title-content">
+						<p>Cloud Platforms</p>
+					</div>
+					<div class="skills">
+						<div class="skill-title">
+							<span>AWS</span>
+						</div>
+						<div class="skill-bar" style="width:80%; background: -webkit-linear-gradient(left, #5e76a8 70%, white 30%);-webkit-animation: progress80 1s 1 forwards;"><span>70%</span></div>
+					</div>
+					<div class="skills">
+						<div class="skill-title" style="width:25%;">
+							<span>GOOGLE</span>
+						</div>
+						<div class="skill-bar" style="width:75%; background: -webkit-linear-gradient(left, #5e76a8 60%, white 40%);-webkit-animation: progress75 1s 1 forwards;"><span>60%</span></div>
+					</div>
+
+					<!-- Game Development Platform -->
+					<div class="title-content">
+						<p>Game Development Platform</p>
+					</div>
+					<div class="skills">
+						<div class="skill-title">
+							<span>UNITY</span>
+						</div>
+						<div class="skill-bar" style="width:80%; background: -webkit-linear-gradient(left, #5e76a8 55%, white 45%);-webkit-animation: progress80 1s 1 forwards;"><span>55%</span></div>
+					</div>
+
+					<!-- Databases -->
+					<!-- Game Development Platform -->
+					<div class="title-content">
+						<p>Databases</p>
+					</div>
+					<div class="skills">
+						<div class="skill-title">
+							<span>MySQL</span>
+						</div>
+						<div class="skill-bar" style="width:80%; background: -webkit-linear-gradient(left, #5e76a8 85%, white 15%);-webkit-animation: progress80 1s 1 forwards;"><span>85%</span></div>
+					</div>
+					<div class="skills">
+						<div class="skill-title" style="width:30%;">
+							<span>MARKLOGIC</span>
+						</div>
+						<div class="skill-bar" style="width:70%; background: -webkit-linear-gradient(left, #5e76a8 60%, white 40%);-webkit-animation: progress70 1s 1 forwards;"><span>60%</span></div>
+					</div>
+					<div class="skills">
+						<div class="skill-title" style="width:30%;" >
+							<span>MONGODB</span>
+						</div>
+						<div class="skill-bar" style="width:70%; background: -webkit-linear-gradient(left, #5e76a8 50%, white 50%);-webkit-animation: progress70 1s 1 forwards;"><span>50%</span></div>
+					</div>
+					<div class="emptyDiv">
+
+					</div>
+
+				</div>
+			</div>
+
+			<!--  ---------------- Experience ------------------- --->
+			<div class="row" ng-show="show==3">
+				<!-- Page Title -->
+				<div class="am_title">
+					<p>Experience - Professional</p>
+				</div>
+					<div class="col-md-12">
+						<div class="companyDetails">
+							<h5 class="companyRole">Mobile Developer Intern</h5>
+							<h5 class="companyDuration">
+								<i class="glyphicon glyphicon-calendar"></i>
+								<label>June 2016-Present</label>
+							</h5>
+						</div>
+						<div class="companyName">
+							<i class="glyphicon glyphicon-briefcase"></i>
+							<label>Adston Cash</label>
+						</div>
+						<div class="row">
+							<div class="col-md-8 companyWork">
+
+									<ul>
+										<li>Configured services in AWS to the requirements of the app</li>
+										<li>Designed the schema of the database for the prototype</li>
+										<li>Developed the scheduler module using AngularJS</li>
+										<li>Developed the user registration module using AngularJS and PHP</li>
+										<li>Developed the user authentication module</li>
+										<li>Developed the notifications module using Firebase Cloud Messaging</li>
+									</ul>
+
+							</div>
+							<div class="col-md-1 emptyDiv">
+
+							</div>
+							<div class="col-md-3">
+								<img class="img img-responsive companyImage" src="img/experience/company1.png" alt="company1">
+							</div>
+						</div>
+					</div>
+				<!-- ------------------------ Company2 -------------------  -->
+				<div class="col-md-12">
+					<div class="companyDetails">
+						<h5 class="companyRole">Programmer Analyst</h5>
+						<h5 class="companyDuration">
+							<i class="glyphicon glyphicon-calendar"></i>
+							<label>December 2013 - July 2015</label>
+						</h5>
+					</div>
+					<div class="companyName">
+						<i class="glyphicon glyphicon-briefcase"></i>
+						<label>Cognizant Technology Solutions</label>
+					</div>
+					<div class="row">
+						<div class="col-md-8 companyWork">
+
+							<ul>
+								<li>Developed  search service using cts: search query and used XQuery profiler to optimize the query performance.</li>
+								<li>Designed the schema of the database for the prototype</li>
+								<li>Developed the scheduler module using AngularJS</li>
+								<li>Developed the user registration module using AngularJS and PHP</li>
+								<li>Developed the user authentication module</li>
+								<li>Developed the notifications module using Firebase Cloud Messaging</li>
+							</ul>
+
+						</div>
+						<div class="col-md-1 emptyDiv">
+
+						</div>
+						<div class="col-md-3">
+							<img class="img img-responsive companyImage" src="img/experience/company2.png" alt="company2">
+						</div>
+					</div>
+				</div>
+			</div>
+				<!-- --------------------------Projects-------------------------- -->
+			<div class="row" ng-show="show==4">
+				<!-- Page Title -->
+				<div class="am_title">
+					<p>Projects - Academic</p>
+				</div>
+				<div>
+					<img ng-repeat="project in projects" class="img img-responsive img-circle projectImages" src={{project}}>
+				</div>
+				<div class="note">
+					<label>Note:</label>
+					<p>Please visit my GitHub page to check out the code for these projects.</p>
+				</div>
+
+			</div>
+			<!-- -------------Contact ------------------ -->
+				<div class="row" ng-if="show==5">
+				<div class="col-md-12">
+				<!-- Page Title -->
+				<div class="am_title">
+					<p>Contact - Me</p>
+				</div>
+				<div id="map"></div>
+				<script>
+					function initMap() {
+						var uluru = {lat: 35.308312, lng: -80.722742};
+						var map = new google.maps.Map(document.getElementById('map'), {
+							center: uluru,
+							zoom:15
+						});
+						var marker = new google.maps.Marker({
+							position: uluru,
+							map: map
+						});
+						var infowindow = new google.maps.InfoWindow({
+							content: "University Terrace Dr, Charlotte, NC, 28262"
+						});
+						marker.addListener('click', function() {
+							infowindow.open(map, marker);
+						});
+
+					}
+				</script>
+				<script async defer
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcROyF4uKIytqaanJ1lN4mKP5KR2wVFyI &callback=initMap">
+				</script>
+			</div>
+			<!-- Let's be in touch -->
+			<div class="sendMessage">
+				<div class="sub_title">
+					<p>Message Me</p>
+				</div>
+				<form name="contactForm" ng-submit="submitForm()">
+					<input type="text" ng-model="sender.senderName" placeholder="Name" name="senderName" class="formFields" required/></br>
+					<input type="email" ng-model="sender.senderEmail" placeholder="Email Address" class="formFields" required/></br>
+					<input type="text" ng-model="sender.senderMessage" placeholder="Message" class="formFields" required/></br>
+					<input type="submit" class="btn btn-primary button"  name="sendMessage" value="Send Message"/>
+				</form>
+			</div>
+			</div>
+			</div>
+			<!-- Profile -->
+			<div class="col-md-3 widget-profile">
+				<div class="row">
+				<!-- profile image -->
+					<div class="col-xs-12 col-sm-3 col-md-12 col-lg-12 prof-title"> 
+						<img class="img img-circle img-responsive profileImage" src="img/profile/profile.png">
+					</div>
+				<!-- profile description -->
+					<div class="col-xs-12 col-sm-9 col-md-12 col-lg-12"> 
+						<div class="prof-info">
+							<h3>RAVI TEJA</h3>
+							<h5>MOBILE APP DEVELOPER</h5>
+							<h6>Charlotte,NC</h6>
+						</div>
+						<div class="prof-desc">
+							<h5>I'm from India and currently reside in USA.An Ardent follower of soccer and cricket.Travelling,reading and cooking are my favorite hobbies.Steve Jobs and Lionel Messi are my idols.</br>You can connect with me through the below social networks.</h5>
+						</div>
+					</div>
+				<!-- social profile -->
+					<div class="col-xs-12 col-md-12 col-sm-9 col-lg-12 socialProfileDiv">
+						<h5>My Social Profiles</h5>
+						<div>
+							<a ng-repeat="icon in icons" ng-click="openSocialNetwork(icon)" ><i class={{icon}}></i></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
